@@ -18,7 +18,7 @@ public enum SwiftSunriseSunset {
     longitude: Double
   ) -> Date? {
     algorithm.sunrise(
-      on: date,
+      for: date,
       in: timeZone,
       latitude: latitude,
       longitude: longitude
@@ -41,7 +41,7 @@ public enum SwiftSunriseSunset {
     longitude: Double
   ) -> Date? {
     algorithm.sunset(
-      on: date,
+      for: date,
       in: timeZone,
       latitude: latitude,
       longitude: longitude
@@ -69,7 +69,7 @@ public enum SwiftSunriseSunset {
     ) -> Date? {
       Self.sunrise(
         algorithm: algorithm,
-        on: date,
+        for: date,
         in: timeZone,
         latitude: location.latitude,
         longitude: location.longitude
@@ -91,7 +91,7 @@ public enum SwiftSunriseSunset {
     ) -> Date? {
       Self.sunset(
         algorithm: algorithm,
-        on: date,
+        for: date,
         in: timeZone,
         latitude: location.latitude,
         longitude: location.longitude

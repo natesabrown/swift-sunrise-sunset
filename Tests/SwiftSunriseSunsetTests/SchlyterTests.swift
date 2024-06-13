@@ -9,7 +9,7 @@ final class SchlyterTests: XCTestCase {
 
     let sunrise = try XCTUnwrap(
       SwiftSunriseSunset.sunrise(
-        on: .summerSolstice2024,
+        for: .summerSolstice2024,
         in: try .usPacific,
         at: .sanFrancisco
       )
@@ -30,7 +30,7 @@ final class SchlyterTests: XCTestCase {
   func testSunriseNoSunriseAllDay() throws {
 
     let sunrise = SwiftSunriseSunset.sunrise(
-      on: .summerSolstice2024,
+      for: .summerSolstice2024,
       in: try .usPacific,
       at: .northPole
     )
@@ -41,7 +41,7 @@ final class SchlyterTests: XCTestCase {
   func testSunriseNoSunriseAllNight() throws {
 
     let sunrise = SwiftSunriseSunset.sunrise(
-      on: .summerSolstice2024,
+      for: .summerSolstice2024,
       in: try .usPacific,
       at: .southPole
     )
@@ -54,7 +54,7 @@ final class SchlyterTests: XCTestCase {
 
     let sunset = try XCTUnwrap(
       SwiftSunriseSunset.sunset(
-        on: .summerSolstice2024,
+        for: .summerSolstice2024,
         in: try .usPacific,
         at: .sanFrancisco
       )
@@ -75,7 +75,7 @@ final class SchlyterTests: XCTestCase {
   func testSunsetNoSunsetAllDay() throws {
 
     let sunset = SwiftSunriseSunset.sunset(
-      on: .summerSolstice2024,
+      for: .summerSolstice2024,
       in: try .usPacific,
       at: .southPole
     )
@@ -86,7 +86,7 @@ final class SchlyterTests: XCTestCase {
   func testSunsetNoSunsetAllNight() throws {
 
     let sunset = SwiftSunriseSunset.sunset(
-      on: .summerSolstice2024,
+      for: .summerSolstice2024,
       in: try .usPacific,
       at: .northPole
     )
