@@ -1,5 +1,5 @@
 <p align="center">
-<img src="logo.svg" height="150" max-width="80%" alt="Logo showing the Sun rising over a mountain with birds flying in the foreground"/>
+<img src="logo.svg" height="200" max-width="80%" alt="Logo showing the Sun rising over a mountain with birds flying in the foreground"/>
 </p>
 
 # Swift Sunrise/Sunset
