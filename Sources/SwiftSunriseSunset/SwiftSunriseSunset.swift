@@ -12,7 +12,7 @@ public enum SwiftSunriseSunset {
   /// - Returns: A `Date?` for the time of sunrise. If there is no valid sunrise, returns `nil`.
   public static func sunrise(
     algorithm: SunriseSunsetProvider = .schlyter,
-    on date: Date,
+    for date: Date,
     in timeZone: TimeZone,
     latitude: Double,
     longitude: Double
@@ -35,7 +35,7 @@ public enum SwiftSunriseSunset {
   /// - Returns: A `Date?` for the time of sunset. If there is no valid sunset, returns `nil`.
   public static func sunset(
     algorithm: SunriseSunsetProvider = .schlyter,
-    on date: Date,
+    for date: Date,
     in timeZone: TimeZone,
     latitude: Double,
     longitude: Double
@@ -63,7 +63,7 @@ public enum SwiftSunriseSunset {
     /// - Returns: A `Date?` for the time of sunrise. If there is no valid sunrise, returns `nil`.
     public static func sunrise(
       algorithm: SunriseSunsetProvider = .schlyter,
-      on date: Date,
+      for date: Date,
       in timeZone: TimeZone,
       at location: CLLocationCoordinate2D
     ) -> Date? {
@@ -85,7 +85,7 @@ public enum SwiftSunriseSunset {
     /// - Returns: A `Date?` for the time of sunset. If there is no valid sunset, returns `nil`.
     public static func sunset(
       algorithm: SunriseSunsetProvider = .schlyter,
-      on date: Date,
+      for date: Date,
       in timeZone: TimeZone,
       at location: CLLocationCoordinate2D
     ) -> Date? {

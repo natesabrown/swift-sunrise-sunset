@@ -26,7 +26,7 @@ public struct SunriseSunsetProvider {
 extension SunriseSunsetProvider {
 
   func sunrise(
-    on date: Date,
+    for date: Date,
     in timeZone: TimeZone,
     latitude: Double,
     longitude: Double
@@ -49,7 +49,7 @@ extension SunriseSunsetProvider {
   }
 
   func sunset(
-    on date: Date,
+    for date: Date,
     in timeZone: TimeZone,
     latitude: Double,
     longitude: Double
