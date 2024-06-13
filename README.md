@@ -39,6 +39,12 @@ Usage is identical for the `SwiftSunriseSunset.sunset(...)` method.
 
 Both methods have overloads to explicitly pass the latitude and longitude, so it is not necessary to import CoreLocation to use this package.
 
+## Credits
+
+Thanks goes to [Paul Schlyter](http://www.stjarnhimlen.se/english.php), who released a [C algorithm](http://www.stjarnhimlen.se/comp/sunriset.c) for calculating sun times to the public domain in 1992. The primary algorithm for sun times calculations is derived from his original code.
+
+This was inspired by the work of Neil Tiffin (GitHub: [neilt](https://github.com/neilt)) who in 2019 ported Schlyter's sun times algorithm to Swift and published as a [gist](https://gist.github.com/neilt/6bc284ac7ce00d566002bc45bc0d86dd). 
+
 ## License
 
 This package is released under the MIT license. See [LICENSE](LICENSE) for details.
