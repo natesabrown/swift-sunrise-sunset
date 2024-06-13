@@ -1,3 +1,7 @@
+<p align="center">
+<img src="logo.svg" height="200" max-width="80%" alt="Logo showing the Sun rising over a mountain with birds flying in the foreground"/>
+</p>
+
 # Swift Sunrise/Sunset
 
 Extensible and lightweight package for getting the sunrise and sunset for a location and time in Swift.
