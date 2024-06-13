@@ -26,7 +26,7 @@ To get the sunrise, use the `SwiftSunriseSunset.sunrise(...)` method:
 
 ```swift
 let sunrise: Date? = SwiftSunriseSunset.sunrise(
-    on: Date.now,
+    for: Date.now,
     in: TimeZone.current,
     at: CLLocationCoordinate2D(
         latitude: 37.773972, 

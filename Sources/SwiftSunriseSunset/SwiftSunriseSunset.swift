@@ -12,13 +12,13 @@ public enum SwiftSunriseSunset {
   /// - Returns: A `Date?` for the time of sunrise. If there is no valid sunrise, returns `nil`.
   public static func sunrise(
     algorithm: SunriseSunsetProvider = .schlyter,
-    on date: Date,
+    for date: Date,
     in timeZone: TimeZone,
     latitude: Double,
     longitude: Double
   ) -> Date? {
     algorithm.sunrise(
-      on: date,
+      for: date,
       in: timeZone,
       latitude: latitude,
       longitude: longitude
@@ -35,13 +35,13 @@ public enum SwiftSunriseSunset {
   /// - Returns: A `Date?` for the time of sunset. If there is no valid sunset, returns `nil`.
   public static func sunset(
     algorithm: SunriseSunsetProvider = .schlyter,
-    on date: Date,
+    for date: Date,
     in timeZone: TimeZone,
     latitude: Double,
     longitude: Double
   ) -> Date? {
     algorithm.sunset(
-      on: date,
+      for: date,
       in: timeZone,
       latitude: latitude,
       longitude: longitude
@@ -63,13 +63,13 @@ public enum SwiftSunriseSunset {
     /// - Returns: A `Date?` for the time of sunrise. If there is no valid sunrise, returns `nil`.
     public static func sunrise(
       algorithm: SunriseSunsetProvider = .schlyter,
-      on date: Date,
+      for date: Date,
       in timeZone: TimeZone,
       at location: CLLocationCoordinate2D
     ) -> Date? {
       Self.sunrise(
         algorithm: algorithm,
-        on: date,
+        for: date,
         in: timeZone,
         latitude: location.latitude,
         longitude: location.longitude
@@ -85,13 +85,13 @@ public enum SwiftSunriseSunset {
     /// - Returns: A `Date?` for the time of sunset. If there is no valid sunset, returns `nil`.
     public static func sunset(
       algorithm: SunriseSunsetProvider = .schlyter,
-      on date: Date,
+      for date: Date,
       in timeZone: TimeZone,
       at location: CLLocationCoordinate2D
     ) -> Date? {
       Self.sunset(
         algorithm: algorithm,
-        on: date,
+        for: date,
         in: timeZone,
         latitude: location.latitude,
         longitude: location.longitude
