@@ -1,7 +1,7 @@
 import Foundation
 
 /// Convenience typealias that describes the parameters necessary to return a `Date?` for a sunrise or sunset.
-public typealias SunriseSunsetEquation = (
+typealias SunriseSunsetEquation = (
   _ year: Int, _ month: Int, _ day: Int, _ latitude: Double, _ longitude: Double
 ) -> Date?
 
@@ -17,7 +17,7 @@ public struct SunriseSunsetProvider {
   ///   If there is no valid sunrise, this should return `nil`.
   ///   - sunset: A closure that returns a `Date?` representing the time of sunset on a given day at a given location.
   ///   If there is no valid sunset, this should return `nil`.
-  public init(sunrise: @escaping SunriseSunsetEquation, sunset: @escaping SunriseSunsetEquation) {
+  init(sunrise: @escaping SunriseSunsetEquation, sunset: @escaping SunriseSunsetEquation) {
     self.sunrise = sunrise
     self.sunset = sunset
   }
